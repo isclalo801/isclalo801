@@ -37,12 +37,12 @@ Arquitectura de una plataforma avanzada de inteligencia estadística y probabili
 
 #### 🍽️ 3. Ecosistemas POS, KDS (Kitchen Display System) & Lealtad Omnicanal
 Suites multi-aplicación de misión crítica para cadenas restauranteras y comercio minorista:
-- **Operación de Piso y Cocina en Tiempo Real:** Sistemas táctiles de alta velocidad en **Angular (Signals)** conectados vía **Supabase Realtime** para comandado en mesas, división de cuentas, cobros móviles y pantallas de preparación en cocina (KDS).
+- **Operación de Piso y Cocina en Tiempo Real:** Sistemas táctiles de alta velocidad en **Angular (Signals)** conectados en tiempo real vía WebSockets para comandado en mesas, división de cuentas, cobros móviles y pantallas de preparación en cocina (KDS).
 - **Fidelización, E-Commerce & Reparto (PWA):** Monederos electrónicos, catálogos de pedidos en línea, aplicaciones para clientes y logística de repartidores en tiempo real.
-- **Sincronización Híbrida Edge (On-Premise ↔ Cloud):** Demonios y servicios resilientes en **Python** que conectan bases de datos locales (**SQL Server / SoftRestaurant**) con la nube (**PostgreSQL / Supabase**) sin interrumpir la operación en sucursal.
+- **Sincronización Híbrida Edge (On-Premise ↔ Cloud):** Demonios y servicios resilientes en **Python** que conectan bases de datos locales (**SQL Server / ERPs locales**) con bases de datos en la nube (**PostgreSQL / MySQL**) sin interrumpir la operación en sucursal.
 
 #### 📊 4. Suites Directivas (BI), Capital Humano (RH) & Automatización Conversacional
-- **Alta Dirección y Recursos Humanos (`ChepeOS`):** Dashboards ejecutivos de auditoría financiera, control de asistencia biométrica/reloj checador, incidencias y nómina respaldados por APIs de alto rendimiento en **Go (Gin)**.
+- **Alta Dirección y Recursos Humanos (`ChepeOS`):** Dashboards ejecutivos de auditoría financiera, control de asistencia biométrica/reloj checador, incidencias y nómina respaldados por APIs de alto rendimiento en **Go (Gin)** y **PostgreSQL**.
 - **Bots Empresariales Oficiales:** Motores conversacionales de atención al cliente, toma de pedidos y notificaciones transaccionales con **NestJS + Fastify** y **WhatsApp Cloud API**.
 - **Infraestructura, Redes & Herramientas Desktop:** Aplicaciones nativas en **Python (CustomTkinter)** empaquetadas como ejecutables autónomos para administración de redes VPN (`Radmin VPN`), escaneo multihilo de subredes y gestión automatizada de conexiones **RDP**.
 
@@ -51,7 +51,7 @@ Suites multi-aplicación de misión crítica para cadenas restauranteras y comer
 ### 🛠️ Stack Tecnológico & Herramientas
 
 #### Frontend, UI/UX & Aplicaciones Web (SPA / SSR / PWA)
-![Angular](https://img.shields.io/badge/Angular_19--22-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
@@ -65,49 +65,19 @@ Suites multi-aplicación de misión crítica para cadenas restauranteras y comer
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![WhatsApp Cloud API](https://img.shields.io/badge/WhatsApp_Cloud_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 
-#### Bases de Datos, Cloud & Infraestructura Híbrida
-![Supabase](https://img.shields.io/badge/Supabase_(Realtime_&_Auth)-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL_(RLS_&_RPC)-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+#### Bases de Datos & Motores Relacionales
+![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=databricks&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Microsoft SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase_Hosting_&_Cloud-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
+#### Cloud, DevOps & Infraestructura
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
----
-
-### 📐 Arquitectura Típica de mis Ecosistemas
-
-```mermaid
-flowchart LR
-    subgraph Campo_Sucursal["🏢 Sucursal / Campo (On-Premise)"]
-        SQL["🗄️ SQL Server / ERP Local"]
-        SYNC["🐍 Python Edge Sync / Tools"]
-        SQL <--> SYNC
-    end
-
-    subgraph Cloud_Core["☁️ Core Cloud & Tiempo Real"]
-        SUPA["⚡ Supabase (PostgreSQL + Realtime)"]
-        GO["🐹 API Go (BI / Dirección)"]
-        NEST["🦁 NestJS (Bots & Webhooks)"]
-        AI["🧠 Motores Predictivos (Poisson / Dixon-Coles / IA)"]
-    end
-
-    subgraph Clientes["📱 Aplicaciones Cliente (Angular)"]
-        ERP["🌱 ERP Agrícola & Admin"]
-        POS["🍽️ POS / KDS / Mesas"]
-        BET["🎯 Plataforma Analítica Deportiva"]
-        WA["💬 WhatsApp Cloud API"]
-    end
-
-    SYNC <==>|Sincronización Resiliente| SUPA
-    SUPA <--> GO
-    SUPA <--> NEST
-    SUPA <--> AI
-    SUPA <==>|WebSockets / REST| ERP
-    SUPA <==>|Realtime| POS
-    AI <--> BET
-    NEST <--> WA
-```
 
 ---
 

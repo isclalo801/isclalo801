@@ -6,7 +6,6 @@
 ![Repositorios](https://img.shields.io/badge/Repositorios_Activos-78+-0A66C2?style=flat-square)
 ![Contribuciones](https://img.shields.io/badge/Contribuciones_Anuales-2,790+-10B981?style=flat-square)
 ![Experiencia](https://img.shields.io/badge/Arquitectura-Full--Stack_%7C_Cloud_%7C_Mobile_%7C_ERP-4F46E5?style=flat-square)
-![Visitas](https://komarev.com/ghpvc/?username=isclalo801&label=Visitas&color=0e75b6&style=flat-square)
 
 </div>
 

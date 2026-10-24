@@ -110,15 +110,11 @@ Suites multi-aplicación de misión crítica para cadenas restauranteras y comer
 
 ---
 
-### Indicadores de Ingeniería y Alcance Operativo
+### Estadísticas de Ingeniería y Actividad
 
-| Indicador / Área | Métrica / Estándar de Producción | Enfoque Técnico |
-| :--- | :--- | :--- |
-| **Volumen de Desarrollo** | **+2,790 contribuciones** en el último año | Entrega continua (CI/CD), despliegues iterativos y mantenimiento evolutivo |
-| **Portafolio de Proyectos** | **+78 repositorios** empresariales y modulares | Arquitectura desacoplada, monorepos y microservicios |
-| **Sistemas de Misión Crítica** | **Operación 24/7** en campo y punto de venta | Tolerancia a fallos de red (Offline-First / Edge Sync) y baja latencia |
-| **Seguridad y Datos** | **Aislamiento multi-empresa** y auditoría | Control de acceso basado en roles (RBAC), políticas a nivel de fila y cifrado |
-| **Ingeniería Cuantitativa** | **Modelado probabilístico e IA aplicada** | Modelos estadísticos (Poisson GLM, Dixon-Coles) y toma de decisiones automatizada |
+<div align="center">
+  <img src="./assets/engineering-dashboard.svg" alt="Dashboard de Ingeniería y Actividad - isclalo801" width="100%" />
+</div>
 
 ---
 

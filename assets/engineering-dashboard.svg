@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#0D9488" />
+    </linearGradient>
+    <linearGradient id="barBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="barTeal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+    <linearGradient id="barIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4338CA" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+    <linearGradient id="barAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="barEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.05" />
+    </filter>
+    <style>
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #0F172A; letter-spacing: -0.2px; }
+      .subtitle { font-size: 12px; font-weight: 500; fill: #64748B; }
+      .kpi-val { font-size: 28px; font-weight: 800; fill: #0F172A; letter-spacing: -0.5px; }
+      .kpi-lbl { font-size: 11px; font-weight: 600; fill: #475569; text-transform: uppercase; letter-spacing: 0.6px; }
+      .kpi-sub { font-size: 11px; font-weight: 500; fill: #0284C7; }
+      .stat-row { font-size: 13px; font-weight: 500; fill: #334155; }
+      .stat-num { font-size: 13.5px; font-weight: 700; fill: #0F172A; }
+      .lang-lbl { font-size: 12px; font-weight: 600; fill: #1E293B; }
+      .lang-pct { font-size: 12px; font-weight: 700; fill: #475569; }
+      .badge-txt { font-size: 11px; font-weight: 700; fill: #0369A1; }
+    </style>
+  </defs>
+
+  <!-- Main Outer Container -->
+  <rect x="4" y="4" width="912" height="332" rx="16" fill="url(#bgGrad)" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- Top Header Bar -->
+  <line x1="28" y1="58" x2="892" y2="58" stroke="#E2E8F0" stroke-width="1" />
+  <circle cx="38" cy="33" r="6" fill="#0284C7" />
+  <text x="54" y="38" class="font-sans title">isclalo801 — Resumen Ejecutivo de Actividad e Ingeniería</text>
+  
+  <!-- Verified Private + Public Badge -->
+  <rect x="676" y="20" width="216" height="26" rx="13" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1" />
+  <circle cx="692" cy="33" r="4" fill="#0284C7" />
+  <text x="703" y="37" class="font-sans badge-txt">Ecosistema Privado + Público</text>
+
+  <!-- ================= LEFT PANEL: GITHUB STATS & GRADE RING ================= -->
+  <rect x="28" y="76" width="420" height="236" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#shadow)" />
+  
+  <text x="48" y="104" class="font-sans kpi-lbl">Métricas de Repositorios y Código</text>
+
+  <!-- Stat Rows -->
+  <!-- Row 1 -->
+  <circle cx="56" cy="134" r="4" fill="#0284C7" />
+  <text x="70" y="138" class="font-sans stat-row">Contribuciones (Último Año):</text>
+  <text x="265" y="138" class="font-sans stat-num">2,796</text>
+
+  <!-- Row 2 -->
+  <circle cx="56" cy="164" r="4" fill="#2563EB" />
+  <text x="70" y="168" class="font-sans stat-row">Repositorios Activos:</text>
+  <text x="265" y="168" class="font-sans stat-num">78 Proyectos</text>
+
+  <!-- Row 3 -->
+  <circle cx="56" cy="194" r="4" fill="#0D9488" />
+  <text x="70" y="198" class="font-sans stat-row">Commits Octubre 2026:</text>
+  <text x="265" y="198" class="font-sans stat-num">273+</text>
+
+  <!-- Row 4 -->
+  <circle cx="56" cy="224" r="4" fill="#4F46E5" />
+  <text x="70" y="228" class="font-sans stat-row">Sistemas en Producción:</text>
+  <text x="265" y="228" class="font-sans stat-num">ERP / POS / IA / Mobile</text>
+
+  <!-- Row 5 -->
+  <circle cx="56" cy="254" r="4" fill="#059669" />
+  <text x="70" y="258" class="font-sans stat-row">Trayectoria en GitHub:</text>
+  <text x="265" y="258" class="font-sans stat-num">Desde 2019 (7+ años)</text>
+
+  <!-- Footer Note inside Left Panel -->
+  <line x1="48" y1="276" x2="428" y2="276" stroke="#F1F5F9" stroke-width="1" />
+  <text x="48" y="296" class="font-sans subtitle">Disponibilidad operativa 24/7 en clientes comerciales</text>
+
+  <!-- Grade Ring on the Right side of Left Panel -->
+  <circle cx="382" cy="175" r="42" fill="none" stroke="#F1F5F9" stroke-width="8" />
+  <circle cx="382" cy="175" r="42" fill="none" stroke="url(#ringGrad)" stroke-width="8" stroke-dasharray="248 264" stroke-linecap="round" transform="rotate(-90 382 175)" />
+  <text x="382" y="180" text-anchor="middle" class="font-sans" font-size="22" font-weight="800" fill="#0F172A">A+</text>
+  <text x="382" y="196" text-anchor="middle" class="font-sans" font-size="9" font-weight="700" fill="#64748B">RANKING</text>
+
+
+  <!-- ================= RIGHT PANEL: KPI CARDS & TECH DISTRIBUTION ================= -->
+  <!-- Top 3 Mini KPI Cards -->
+  <!-- Card 1 -->
+  <rect x="468" y="76" width="134" height="86" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#shadow)" />
+  <text x="484" y="100" class="font-sans kpi-lbl">Anual</text>
+  <text x="484" y="130" class="font-sans kpi-val">2,796</text>
+  <text x="484" y="148" class="font-sans kpi-sub">Contribuciones</text>
+
+  <!-- Card 2 -->
+  <rect x="613" y="76" width="134" height="86" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#shadow)" />
+  <text x="629" y="100" class="font-sans kpi-lbl">Portafolio</text>
+  <text x="629" y="130" class="font-sans kpi-val">78</text>
+  <text x="629" y="148" class="font-sans" font-size="11" font-weight="500" fill="#0F766E">Repositorios</text>
+
+  <!-- Card 3 -->
+  <rect x="758" y="76" width="134" height="86" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#shadow)" />
+  <text x="774" y="100" class="font-sans kpi-lbl">Arquitectura</text>
+  <text x="774" y="130" class="font-sans kpi-val">100%</text>
+  <text x="774" y="148" class="font-sans" font-size="11" font-weight="500" fill="#4338CA">Producción Real</text>
+
+  <!-- Bottom Right Card: Tech Distribution -->
+  <rect x="468" y="174" width="424" height="138" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" filter="url(#shadow)" />
+  <text x="488" y="198" class="font-sans kpi-lbl">Distribución de Stack en Producción</text>
+
+  <!-- Stacked Horizontal Bar -->
+  <rect x="488" y="210" width="145" height="10" rx="4" fill="url(#barBlue)" />
+  <rect x="635" y="210" width="88" height="10" rx="0" fill="url(#barTeal)" />
+  <rect x="725" y="210" width="72" height="10" rx="0" fill="url(#barIndigo)" />
+  <rect x="799" y="210" width="46" height="10" rx="0" fill="url(#barAmber)" />
+  <rect x="847" y="210" width="25" height="10" rx="4" fill="url(#barEmerald)" />
+
+  <!-- Legend Grid (2 Columns x 3 Rows) -->
+  <!-- Col 1 -->
+  <circle cx="494" cy="242" r="5" fill="#2563EB" />
+  <text x="506" y="246" class="font-sans lang-lbl">TypeScript / Angular / Ionic</text>
+  <text x="662" y="246" class="font-sans lang-pct">38%</text>
+
+  <circle cx="494" cy="268" r="5" fill="#0D9488" />
+  <text x="506" y="272" class="font-sans lang-lbl">Python / Modelos IA / Sync</text>
+  <text x="662" y="272" class="font-sans lang-pct">23%</text>
+
+  <circle cx="494" cy="294" r="5" fill="#4F46E5" />
+  <text x="506" y="298" class="font-sans lang-lbl">SQL / Postgres / MySQL</text>
+  <text x="662" y="298" class="font-sans lang-pct">19%</text>
+
+  <!-- Col 2 -->
+  <circle cx="704" cy="242" r="5" fill="#D97706" />
+  <text x="716" y="246" class="font-sans lang-lbl">Go / NestJS / PHP</text>
+  <text x="848" y="246" class="font-sans lang-pct">12%</text>
+
+  <circle cx="704" cy="268" r="5" fill="#10B981" />
+  <text x="716" y="272" class="font-sans lang-lbl">Java / Android / Otros</text>
+  <text x="848" y="272" class="font-sans lang-pct">8%</text>
+
+  <circle cx="704" cy="294" r="5" fill="#64748B" />
+  <text x="716" y="298" class="font-sans lang-lbl">Cloud (AWS / GCP / Azure)</text>
+  <text x="848" y="298" class="font-sans lang-pct">Core</text>
+</svg>
